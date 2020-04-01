@@ -127,13 +127,12 @@ a {
 }
 
 .site-banner .banner-area .author .author-img {
-    background: url(../assets/about.jpg);
+    background: url(../assets/me.jpg);
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: auto;
-    background-size: 200%;
-    background-position: 40% 0;
+    background-size: cover;
 }
 
 /* banner area */

@@ -319,7 +319,7 @@ header .logo {
     }
 
     header .logo {
-        margin-left: 20px;
+        margin-left: 10px;
     }
  
     .menu-icon {
@@ -375,6 +375,16 @@ header .logo {
         color: var(--secondary-color);
     }
 
+}
+
+@media screen and (max-width:360px){
+    .btn-download {
+        font-size: 12px;
+    }
+    
+    header .logo {
+        margin-left: 5px;
+    }
 }
 
 /* media qurey*/

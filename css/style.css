@@ -1,183 +1,353 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-border: #ffffff34;
-    --font-staat: font-family: 'Staatliches', cursive;
-    --font-osw: font-family: 'Oswald', sans-serif;
-    --font-ramb: font-family: 'Rambla', sans-serif;
+    --primary-color: rgb(117, 16, 247);
+    --secondary-color: #141c3a;
+    --roboto: font-family: 'Roboto', sans-serif;
 }
 
 /* global class */
-
-.font-staat {
-    font: normal 400 18px;
-    font-family: 'Staatliches', cursive;
+.primary-color {
+    color: var(--primary-color);
 }
 
-.font-osw {
-    font: normal 400 18px;
-    font-family: 'Oswald', sans-serif;
-
+.primary-background-color {
+    background-color: var(--primary-color);
 }
 
-.font-ramb {
-    font: normal 400 18px;
-    font-family: 'Rambla', sans-serif;
+.secondary-color{
+    color: var(--secondary-color);
 }
 
-.bgcolor-black {
-    background-color: var(--color-black);
+.secondary-background-color{
+    background-color: var(--secondary-color);
+}
+.text-white {
+    color: #fff;
 }
 
-.font-size-40 {
-    font-size: 40px;
-}
-
-.font-size-34 {
-    font-size: 34px;
-}
-
-.font-size-27 {
-    font-size: 27px;
-}
-
-.font-size-20 {
-    font-size: 20px;
-}
-
-.font-size-16 {
-    font-size: 16px;
-}
 
 a {
+    text-decoration: none;
     cursor: pointer !important;
 }
 
+h1
+ {
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 800;
+    margin: 32px 0px 32px;
+    color:var(--secondary-color);
+}
+h2{
+    font-size: 40px;
+    line-height: 36px;
+    font-weight: 800;
+    margin: 56px 0 56px;
+    color: var(--secondary-color);
+}
+h3{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    margin: 38px 0 38px;
+    color: var(--secondary-color);
+}
+
+
+h4 {
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 28.9px;
+    font-weight: 300;
+    margin: 32px;
+    color: var(--secondary-color);
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 50px 0px 8px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+li {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin: 0;
+}
+
+.mr-20 {
+    margin: 20px 0 30px;
+}
+
+.btn-small{
+    padding: 8px 30px;
+    border-radius: 290486px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color:var(--primary-color);
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+}
+.btn-small:hover{
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+.btn-small a{
+    text-decoration: none;
+    color: inherit;
+}
+.btn-small :focus{
+    outline: none;
+}
+
+.btn-big{
+        padding: 15px 60px;
+        border-radius: 290486px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        margin: 48px 0px;
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        background-color: #fff;
+}
+
+.btn-big:hover{
+    color: #fff;
+    background-color:var(--primary-color);
+}
+
+.btn-big a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-big:focus{
+    outline: none;
+}
+
+.btn-download {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color:var(--primary-color);
+    border-radius: 290486px;
+    padding: 15px 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 56px 0px 0px;
+
+}
+.btn-download:hover{
+background-color: #ffffff;
+color: var(--primary-color);
+}
+
+.btn-download:focus{
+    outline: none;
+}
+.mr-10{
+    margin-top: 10rem;
+}
 /* global class */
 
 /* custom styles */
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-    transition: left .5s ease;
+/* Header */
+header {
+    padding: 1.2em 1em;
 }
 
-#header nav {
+header .logo {
+    margin-left: 30px;
+}
+
+
+.menu-icon {
+    display: none;
+}
+.close{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+/* Header */
+
+/* main */
+#home {
     height: 100vh;
 }
 
-#header .site-title .navbar-brand {
-    letter-spacing: 2px;
-    color: var(--color-white);
-    margin-left: 20px;
 
+
+
+/* main */
+
+/* About */
+.about {
+    background-color: var(--primary-color);
+    padding: 10rem;
 }
 
-#header .nav-link {
-    margin: .7rem 1rem;
-    border-bottom: 1px solid var(--color-border);
-    text-transform: uppercase;
+.about-title {
+    color: #fff;
 }
 
-#header .nav-link:hover {
-    color: var(--color-white) !important;
+.about-para {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#header .toggle-button {
-    background: none;
-    color: var(--color-black);
-    position: fixed;
-    top: 25px;
-    right: 20px;
-    border: 1px solid var(--color-border);
+
+
+/* About */
+
+
+/* Services */
+.height-fix {
+    height: 90vh;
 }
 
-#header .toggle-button:focus {
-    outline: none !important;
+.margin-fix {
+    padding: 20px;
+    margin: 80px;
+}
+.icons {
+    color: var(--primary-color);
 }
 
-.toggle-left {
-    left: 0 !important;
-    width: 1000px !important;
+/* Services */
+
+
+/* My Works */
+
+/* My Works */
+
+/* Footer */
+.contact-section {
+    margin: 0 auto;
+    background-color: #141c3a;
 }
 
-/* banner area */
-.site-banner .banner-area {
-    background: url(../assets/Banner_image.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
 
-.site-banner .banner-area .author {
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-}
-
-.site-banner .banner-area .author .author-img {
-    background: url(../assets/me.jpg);
-    width: 200px;
-    height: 200px;
+.circle {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
     border-radius: 50%;
-    margin: auto;
-    background-size: cover;
+    margin-right: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
 }
 
-/* banner area */
-
-/* contact */
-input[type="text"],
-input[type="email"] {
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid gray;
-    padding: 1.5rem 1rem;
+.icon {
+    color: #fff;
 }
 
-.msg {
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid gray;
-    padding: 1.5rem 1rem;
+.icon:hover {
+    color: #fff;
 }
 
-a {
-    color: grey;
-}
 
-.ln:hover {
-    color: #0077b5;
-}
+/* Footer */
 
-.gh:hover {
-    color: #313335;
-}
+/* media qurey */
+@media screen and (max-width:786px) {
 
-.tw:hover {
-    color: #00a0dc;
-}
-
-/* contact */
-/* media quries */
-@media screen and (min-width:786px) {
-    .toggle-button {
-        display: none;
+    header {
+        margin-bottom: 32px;
     }
+
+    h1 {
+        font-size: 38px;
+    }
+
+
+    .menu-icon {
+        display: block;
+        padding: 20px;
+        width: 70px;
+    }
+
+    .close {
+        display: none;
+        padding: 20px;
+        width: 70px;
+    }
+ .btn-small{
+     display: none;
+ }
+
+    .btn-download {
+        font-size: 16px;
+    }
+
+    .margin-fix {
+        padding: 0px;
+        margin: 0px;
+    }
+   .active{
+       display: block;
+       background-color: #fff;
+       color: var(--secondary-color);
+       text-align: center;
+       margin-top: 20px;
+       box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+       border-radius: 10px;
+      
+   }
+   .active li{
+       font-weight: 700;
+       padding:20px 15px;
+   }
+   .active li:hover{
+       background-color:rgba(250, 250, 250, 0.747);
+   }
+   .active li a {
+       text-decoration: none;
+       color: var(--secondary-color);
+   }
+
 }
 
-
-/* media quries */
-
-/* custom styles */
+/* media qurey*/

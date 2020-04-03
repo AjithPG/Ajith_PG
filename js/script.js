@@ -1,31 +1,24 @@
 $(document).ready(function(e){
-    $win = $(window);
-    $navbar = $('#header');
+
+    $mobilemenu = $('.mobile-menu');
     $toggle = $('.toggle-button');
-    var width = $navbar.width();
-    toggle_onclick($win,$navbar,width);
-
-    //resize
-    $win.resize(function(){
-        toggle_onclick($win,$navbar,width);
-    });
-
+    $remove =$('.close');
+  
     $toggle.click(function(e){
-           $navbar.toggleClass("toggle-left");
+           $toggle.css("display","none");
+           $remove.css("display","block");
+           $mobilemenu.addClass('active');
     });
 
+    $remove.click(function(e){
+        $remove.css("display","none");
+        $toggle.css("display","block");
+        $mobilemenu.removeClass('active');
+    })
+    
 
 });
 
-function toggle_onclick($win,$navbar,width){
-
-    if($win.width()<=768){
-        $navbar.css({left:`-${width}px`});
-
-    }else{
-        $navbar.css({left:'0px'});
-    }
-}
 
 var typed = new Typed('#typed',{
     strings:[

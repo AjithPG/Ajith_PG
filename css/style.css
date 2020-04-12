@@ -315,7 +315,6 @@ header .logo {
     width:calc(100% - 30px);
     text-align: center;
     z-index: 2;
-    margin-top: 10px;
     opacity: 0;
     transition: opacity .5s ease;
     margin-top: 25px;
@@ -452,7 +451,9 @@ header .logo {
         color: var(--secondary-color);
     }
   
-
+    .button{
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width:360px){

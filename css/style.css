@@ -384,7 +384,9 @@ header .logo {
     header {
         margin-bottom: 32px;
     }
-
+    #home {
+        height: 75vh;
+    }
     h1 {
         font-size: 38px;
     }

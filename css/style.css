@@ -300,8 +300,8 @@ header .logo {
     z-index: 2;
     top: 25%;
     vertical-align: middle;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 500;
+   
     transform: translateY(100%);
     width:calc(100% - 30px);
     text-align: center;
